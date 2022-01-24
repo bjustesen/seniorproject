@@ -1,0 +1,69 @@
+@media screen and (min-width: 500px) {
+
+    .topnav .icon img, .topnav .icon, .topnav .icon:hover {
+        display:none;
+    }
+    .topnav a:not(:first-child) {
+        display: block;
+    }
+    .topnav{
+        width: 100%;
+    }
+
+
+    /* home */
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+    }
+    .left-panel{
+    width: 270px;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    }
+    .left-panel section:nth-child(1) h1{
+        margin-left: -45px;
+        margin-top: 5px;
+    }
+    .left-panel section:nth-child(1) p{
+        margin-left: 89px;
+        margin-top: -30px;
+    }
+    .main-section {
+        grid-column: 2/6;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
+    .main-section section:nth-child(1) {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .hobbies {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .home-pic-right {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .home-pic-left {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .ref-tittle{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin: 0;
+    }
+    
+    
+}
